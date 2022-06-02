@@ -20,7 +20,8 @@
 
   <!-- Custom styles for this template -->
   <link href="http://mysite.local/wp-content/themes/myblog/css/clean-blog.min.css" rel="stylesheet">
-
+  <!-- ワードプレスの必須タグ -->
+  <?php wp_head(); ?>
 </head>
 
 <body>
@@ -177,7 +178,8 @@
 
   <!-- Custom scripts for this template -->
   <script src="js/clean-blog.min.js"></script>
-
+  <!-- ワードプレスの必須タグ -->
+  <?php wp_footer(); ?>
 </body>
 
 </html>
