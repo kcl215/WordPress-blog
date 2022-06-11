@@ -6,13 +6,13 @@
 </head>
 
 <body <?php body_class(); ?>>
-  
+
   <?php get_template_part('includes/header'); ?>
   <?php if (have_posts()) : ?>
     <?php while (have_posts()) : the_post(); ?>
       <!-- Page Header -->
       <?php
-  $eyecatch = get_eyecatch_with_default();
+      $eyecatch = get_eyecatch_with_default();
 
       ?>
       <header class="masthead" style="background-image: url('<?php echo $eyecatch[0]; ?>')">
